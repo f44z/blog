@@ -30,4 +30,4 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         local-dir: ./public/
-        sever-dir: /home/fuzzoua/www/
+        sever-dir: www/
