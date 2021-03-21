@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://fuzzoux.com',
   pathPrefix: '/',
   title: 'fuzzoux',
-  subtitle: 'Hacking with <3',
+  subtitle: 'passionate about offensive security',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'fuzzoux',
     photo: '/photo.jpg',
-    bio: '<3 hacking',
+    bio: 'offensive security enthusiast',
     contacts: {
       email: '',
       facebook: '',
