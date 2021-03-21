@@ -32,7 +32,7 @@ Resources that I used for learning about 1 and 2 are linked at the [end of this 
 - [Manual code review](#manual-code-review)
 
 ## Reconnaissance
-This step is all about a clicking-through application from a user perspective with Burp proxy (or similar tool) turned on. Note all of the application functionalities, technology, how it handles authentication, authorization, is there anything odd that triggers your pentesting instinct? Note the structure of requests, cookies, local storage, etc. Write your observation down and save the Burp session. 
+This step is all about a clicking-through application from a user perspective with Burp proxy (or similar tool) turned on. Note all of the application functionalities, technology, how it handles authentication, authorization, is there anything odd that triggers your pentesting instinct? It's worth to pay attention to the structure of requests, cookies, local storage. Writiting down observation from this step is essential. 
 
 ## Threat modeling
 It's time to make use of your notes from the reconnaissance phase. List all of the application functionalities and map this to known vulnerabilities. What can go wrong if the attacker misuses the presented functionality? There are threat modeling lessons that I find very useful, it's from Jakub Kaluzny from SecuRing - you can watch it [here](https://www.youtube.com/watch?v=e_haUCYppYs&list=PL-lO2xrptAtav4SZgCdDkVxChWhVU3kmP).
@@ -44,7 +44,7 @@ In this step, you should prepare a code base for tests. This depends on the type
 3. Sometimes it's also useful to observe interactions between application and system in. ex. [windows sysinternals](https://docs.microsoft.com/en-us/sysinternals/) Procmon and ProcessHacker can become handy.
 
 ## Understand the application
-Before starting to look for vulnerabilities, make sure you know how the application is structured and get yourself familiar with coding patterns. It can become easier when the application is based on some framework or uses well-known architecture like MVP. However, make sure to note all exceptions from standards, for example, look for places where database query is done without ORM or parts of the application that use custom code instead of framework capabilities. A debugger can be helpful in this step.
+Before starting to look for vulnerabilities, it's worth to know how the application is structured and understand used coding patterns. It can become easier if the application is based on some framework or uses well-known architecture like MVP. All exceptions from standards like places where database query is done without ORM or parts of the application that use custom code instead of framework capabilities, could be helpful in vulnerability search. Using debugger can make this step easier.
 
 In this phase I'm trying to answer the following questions:
 - What framework application uses?
@@ -63,12 +63,13 @@ In this phase I'm trying to answer the following questions:
 - [Burp Professional](https://portswigger.net/burp/pro) for application dynamic analysis utilizing scanner module
 
 ## Manual code review
-Here real fun starts. Now you have:
-basic knowledge of the application and its functionalities, 
-threat model, 
-insight into how the application is structured and how it works,
-low-hanging fruits from the automatic analysis. 
-Of course, the OffSec exam and CTF's are different from the real-life scenario. Usually, in real engagement, you should stick to penetration testing methodologies like [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Testing_Guide_v4.pdf) to make sure your tests for all well-known vulnerabilities and deliver a comprehensive report.
+and real fun starts now. To summarize, following data is gathered from previous enumeration steps:
+- basic knowledge of the application and its functionalities, 
+- threat model, 
+- insight into how the application is structured and how it works,
+- low-hanging fruits from the automatic analysis. 
+
+The OffSec exam and CTF's are different from the real-life scenario. Usually, in real engagement, you should stick to penetration testing methodologies like [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Testing_Guide_v4.pdf) to make sure your tests for all well-known vulnerabilities and deliver a comprehensive report.
 
 In CTF the goal is usually to get full control over the application and underlying system. Firstly, look for some kind of authentication bypass as in general it's easier to find more serious vulnerabilities like RCE as admin user than as non-logged in. When looking for authentication bypass, focus on all application functionalities related to login and registering user, such as:
 - simple logic flaws related to login in. ex. possibility to register as a user with the highest privileges
@@ -79,6 +80,10 @@ In CTF the goal is usually to get full control over the application and underlyi
 - how an application is protected against XSS, maybe it's possible to hijack admin sessions using XSS-based vulnerability?
 
 Having access to the application as a privileged user, you can utilize all of its functionalities to get RCE or find flags. Things like insecure deserialization flaws, unrestricted file upload vulnerabilities, or SQL injections could be an important ingredient in your RCE kill chain recipe.
+
+Have you find is useful? Do you have other white box testing flow? Please find me [@twitter](https://www.twitter.com/fuzzoux) and discuss.
+
+Happy hacking!
 
 ## Resources
 - web application vulnerability refresher - [PortSwigger Academy](https://portswigger.net/web-security)
