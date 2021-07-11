@@ -81,7 +81,7 @@ In CTF the goal is usually to get full control over the application and underlyi
 
 Having access to the application as a privileged user, you can utilize all of its functionalities to get RCE or find flags. Things like insecure deserialization flaws, unrestricted file upload vulnerabilities, or SQL injections could be an important ingredient in your RCE kill chain recipe.
 
-Have you find is useful? Do you have other white box testing flow? Please find me [@twitter](https://www.twitter.com/fuzzoux) and discuss.
+Have you find is useful? Do you have other white box testing flow? Please find me [@twitter](https://www.twitter.com/f44z) and discuss.
 
 Happy hacking!
 
