@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  url: 'https://fuzzoux.com',
+  url: 'https://f44z.com',
   pathPrefix: '/',
-  title: 'fuzzoux',
+  title: 'f44z',
   subtitle: 'passionate about offensive security',
   copyright: '© All rights reserved.',
   disqusShortname: '',
@@ -25,15 +25,15 @@ module.exports = {
     }
   ],
   author: {
-    name: 'fuzzoux',
+    name: 'f44z',
     photo: '/photo.jpg',
     bio: 'offensive security enthusiast',
     contacts: {
       email: '',
       facebook: '',
       telegram: '',
-      twitter: 'fuzzoux',
-      github: 'fuzzoux',
+      twitter: 'f44z',
+      github: 'f44z',
       rss: '',
       vkontakte: '',
       linkedin: '',
