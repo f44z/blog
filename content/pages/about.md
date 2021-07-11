@@ -4,4 +4,4 @@ template: "page"
 socialImage: "/photo.jpg"
 ---
 
-some guy interested in following fields of IT security: Offensive Tools Development, Exploit Development, Malware Analysis, Application Security, DevSecOps, Cloud Security
+Interested in following fields of IT security: Offensive Tools Development, Exploit Development, Malware Analysis, Application Security, DevSecOps, Cloud Security. Looking for new projects and collaboration.
