@@ -4,4 +4,4 @@ template: "page"
 socialImage: "/photo.jpg"
 ---
 
-Open to new initiatives. Ping me on discord @f44z#2520
+Open to new projects and collaboration. Ping me on discord f44z#2520
