@@ -3,13 +3,17 @@
  */
 
 // Colors
-$color-base: #222;
-$color-primary: #6e1010;
-$color-secondary: #580a0a;
+// $color-base: #222;
+// $color-primary: #6e1010;
+// $color-secondary: #580a0a;
+
+$color-base: hsl(219, 14%, 71%);
+$color-primary: hsl( 29, 54%, 61%);
+$color-secondary: hsl(220, 9%, 55%);
 
 $color-white: #FFF;
-$color-gray: lighten($color-base, 40%);
-$color-gray-border: lighten($color-base, 77%);
+$color-gray:  hsl(0, 0%, 100%);
+$color-gray-border: hsl(220, 10%, 40%);
 $color-gray-bg: lighten($color-base, 79%);
 
 // Typographic
