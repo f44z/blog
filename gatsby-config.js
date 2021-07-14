@@ -98,7 +98,6 @@ module.exports = {
         }]
       }
     },
-    'gatsby-plugin-netlify-cms-paths',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -122,7 +121,12 @@ module.exports = {
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
           'gatsby-remark-autolink-headers',
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: 'Tomorrow Night Blue' // Or install your favorite theme from GitHub
+            }
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-external-links'
