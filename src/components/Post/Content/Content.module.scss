@@ -44,6 +44,10 @@
       text-decoration: underline
     }
 
+    & code {
+      margin: 0
+    }
+
     & * {
       max-width: $layout-post-width;
       margin-left: auto;
