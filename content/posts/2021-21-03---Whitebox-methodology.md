@@ -24,12 +24,14 @@ Resources that I used for learning about 1 and 2 are linked at the [end of this 
 
 ## White box methodology
 
-- [Reconnasaince](#reconnasaince)
+- [White box methodology](#white-box-methodology)
+- [Reconnaissance](#reconnaissance)
 - [Threat modeling](#threat-modeling)
-- [Tests preperation](#tests-preperation)
-- [Understand application](#understand-application)
+- [Tests preparation](#tests-preparation)
+- [Understand the application](#understand-the-application)
 - [Automatic scans](#automatic-scans)
 - [Manual code review](#manual-code-review)
+- [Resources](#resources)
 
 ## Reconnaissance
 This step is all about a clicking-through application from a user perspective with Burp proxy (or similar tool) turned on. Note all of the application functionalities, technology, how it handles authentication, authorization, is there anything odd that triggers your pentesting instinct? It's worth to pay attention to the structure of requests, cookies, local storage. Writiting down observation from this step is essential. 
@@ -81,7 +83,7 @@ In CTF the goal is usually to get full control over the application and underlyi
 
 Having access to the application as a privileged user, you can utilize all of its functionalities to get RCE or find flags. Things like insecure deserialization flaws, unrestricted file upload vulnerabilities, or SQL injections could be an important ingredient in your RCE kill chain recipe.
 
-Have you find is useful? Do you have other white box testing flow? Please find me [@twitter](https://www.twitter.com/f44z) and discuss.
+Have you find is useful? Do you have other white box testing flow? Please find me [@twitter](https://www.twitter.com/meltedblocks) and discuss.
 
 Happy hacking!
 
