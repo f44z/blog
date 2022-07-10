@@ -1,7 +1,7 @@
 ---
 title: "Contact me"
 template: "page"
-socialImage: "/photo.jpg"
+socialImage: "/photo.png"
 ---
 
-Open to new projects and collaboration. Ping me on discord f44z#2520
+Open to new projects and collaboration. Ping me on discord meltedblocks#2520

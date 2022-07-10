@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://f44z.com',
+  url: 'https://meltedblocks.com',
   pathPrefix: '/',
-  title: 'f44z',
-  subtitle: 'passionate about offensive security',
+  title: 'meltedblocks',
+  subtitle: 'Blockchain Security',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -25,14 +25,14 @@ module.exports = {
     }
   ],
   author: {
-    name: 'f44z',
-    photo: '/photo.jpg',
-    bio: 'offensive security enthusiast',
+    name: 'meltedblocks',
+    photo: '/photo.png',
+    bio: 'Blockchain Security / Building and breaking on Solana / Offensive Security Engineer',
     contacts: {
       email: '',
       facebook: '',
       telegram: '',
-      twitter: '_f44z',
+      twitter: 'meltedblocks',
       github: 'f44z',
       rss: '',
       vkontakte: '',
